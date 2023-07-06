@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: antiquewhite;
+}
+header nav ul{
+    display: flex;
+    border: 2px solid black;
+    height: 7vh;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+}
+header nav ul li{
+    list-style: none;
+    margin: 1em;
+}
+header nav ul li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+.text{
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    background-image: url("https://st.depositphotos.com/1708346/1404/i/450/depositphotos_14043607-stock-photo-college-gym-49ers-football-team.jpg");
+    background-size: contain;
+    background-position: center;
+    color: aliceblue;
+}
+.motives{
+    display: flex;
+    justify-content: center;
+}
+.motives div{
+    height: 30vh;
+    width: 20%;
+    margin: 1em 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3em;
+    color: aliceblue;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+    transition-property: 1 sec ease;
+}
+.one{
+    background-image: url("https://www.muscleandfitness.com/wp-content/uploads/2018/12/Personal-Trainer-Training-Partner-GettyImages-654427364.jpg?quality=86&strip=all");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.two{
+    background-image: url("https://www.eventbrite.com/blog/wp-content/uploads/2022/09/gabin-vallet-J154nEkpzlQ-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.three{
+     background-image: url("https://www.pritikin.com/wp-content/uploads/2022/09/wellness-education-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header nav ul li a:hover{
+    color: bisque;
+}
+.one:hover{
+    transform: scale(1.1);
+}
+.two:hover{
+    transform: scale(1.1);
+}
+.three:hover{
+    transform: scale(1.1);
+}
+@media(max-width:545px){
+    body{
+        font-size: 0.8rem;
+    }
+    header nav ul{
+        height: 5vh;
+    }
+    .text{
+        height: 55vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        background-image: url("https://st.depositphotos.com/1708346/1404/i/450/depositphotos_14043607-stock-photo-college-gym-49ers-football-team.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: aliceblue;
+    }
+    .motives{
+        display: block;
+    }
+    .motives div{
+        width: 100%;
+        margin: 0.3em 0;
+    }
+    footer{
+        position: static;
+    }
+    .one:hover{
+        transform: scale(1);
+    }
+    .two:hover{
+        transform: scale(1);
+    }
+    .three:hover{
+        transform: scale(1);
+    }
+}
