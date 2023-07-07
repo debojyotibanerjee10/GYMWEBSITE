@@ -6,6 +6,10 @@
 body{
     background-color: antiquewhite;
 }
+header{
+    position: sticky;
+    top: 0;
+}
 header nav ul{
     display: flex;
     border: 2px solid black;
@@ -66,8 +70,8 @@ header nav ul li a{
     background-size: cover;
 }
 footer{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0;  */
     width: 100%;
     background-color: black;
     color: aliceblue;
@@ -87,6 +91,26 @@ header nav ul li a:hover{
 .three:hover{
     transform: scale(1.1);
 }
+main.form form{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main.form form input[type="text"]{
+    width: 60%;
+    margin: 0.7em;
+    padding: 0.5em;
+}
+main.form form button{
+    padding: 0.4em;
+}
+main.form h2{
+    margin-top: 3em;
+    text-align: center;
+}
+
 @media(max-width:545px){
     body{
         font-size: 0.8rem;
@@ -113,9 +137,10 @@ header nav ul li a:hover{
         width: 100%;
         margin: 0.3em 0;
     }
-    footer{
-        position: static;
-    }
+    /* footer{
+        position: absolute;
+        bottom: 0;
+    } */
     .one:hover{
         transform: scale(1);
     }
